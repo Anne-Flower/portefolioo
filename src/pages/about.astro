@@ -1,0 +1,129 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="About | Anne-Flore Bernard" description="About Anne-Flore Bernard">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="About"
+				tagline=" More about myself and my background "
+			>
+				<img
+					width="753"
+					height="273"
+					src="/assets/at-work.jpg"
+					alt="Anne-Flore Bernard"
+				/>
+			</Hero>
+
+			<section>
+				<h2 class="section-title">Background</h2>
+				<div class="content">
+					<p>	Trained as a classical musician (viola player), my passion for music naturally led me to computer-assisted music (CAM), paving the way for a new vocation in computer programming. Today, I specialize in web development, with a particular interest in Next.js, JavaScript, and React, where I strive to harmonize my artistic sensibility with technology to create interactive and creative web experiences
+					</p> 
+					
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Education</h2>
+				<div class="content">
+					<p>Six-month internship at Artefact, Artefact 3000, Paris (france)</p>
+					<p>Wagon - Lyon (france)</p>
+					<p>Master Hochschule Felix Mendelsshon Leipzig (allemagne) </p>
+					<p>Bachelor Haute Ecole de Musique de Genève (suisse)</p>
+				</div>
+				
+			</section>
+			<section>
+				<h2 class="section-title">Skills</h2>
+				<div class="content">
+					<p>
+						<h5>Technical Skills: :</h3>
+						<p>Programming Languages: JavaScript, Next.js, TypeScript, Ruby on Rails</p>
+					  <p>Frameworks and Libraries : React, Tailwind, StoryBook </p>
+						<p>Development Tools : Git, Github, Gitlab,styled-components</p>
+						<p>Testing and Debugging : React Testing Library</p>
+						
+						<br>
+						
+						<h5>Professional Skills :</h3>
+						<p>Project Management : Agile, review. Slack.</p>
+						<p>Communication : Strong written and verbal communication skills.</p>
+						<p>Teamwork :  Experienced in team collaboration.</p>
+						<p>Problem Solving: Efficient in resolving technical issues.</p>
+						<p>Creativity: Ability to bring creative ideas to projects.</p>
+						<br>
+
+						<h5>Languages: </h3>
+						<p>	French: Native speaker.</p>
+						<p>English, Spanish, German: Fluent. </p>
+						</p>
+				</div>
+			</section>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 16rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-50);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>

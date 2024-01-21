@@ -1,0 +1,75 @@
+---
+// import Icon from './Icon.astro';
+---
+
+<section class="box skills">
+	<div class="stack gap-2 lg:gap-4">
+		<!-- <Icon icon="terminal-window" color="var(--accent-light)" size="2.5rem" gradient /> -->
+		<h2>Front End</h2>
+		<p>🌐 I'm a React and Next.js addict!</p>
+		<p>🧩 React, with its component-based architecture, has truly transformed the way I think about building user interfaces. It's like having a box of versatile Lego bricks – each piece can be used to construct something unique and beautiful. The simplicity and flexibility React offers have made it an indispensable tool in my developer toolkit.</p>
+
+		<p>🍒 Then there's Next.js – the cherry on top of React! </p>	 
+			<p>Next.js has been a game-changer for server-side rendering, static site generation, and building lightning-fast web applications. It's amazing how it seamlessly integrates with React, making the development process smoother and more efficient.</p>
+			<p>🌍  What truly excites me about these technologies is not just their technical capabilities but how they align with Green IT principles. Efficient code means less resource usage and a smaller carbon footprint, which is a big win for our planet! 
+			</p>
+
+<section></section>
+
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<!-- <Icon icon="trophy" color="var(--accent-light)" size="2.5rem" gradient /> -->
+		<h2>Music</h2>
+		<p>🎻 I began my musical journey at the age of 7 at the Conservatoire d'Avignon. I continued my studies at the Conservatoire de Lyon, where I unanimously won the Viola Prize, as well as prizes in chamber music and solfège. During my advanced studies at the Conservatoire de Rueil-Malmaison, I was admitted to the Haute École de Musique de Genève for a Bachelor's degree, studying under Zoltàn Toth and later Ori Kam.
+
+			Under the guidance of these masters, I developed a passion for chamber music and contemporary music.</p><p>
+			
+			✈️ Later, I joined the class of soloist Tatjana Masurenko for a Master's degree in Leipzig, Germany. During this time, I won a competition to become a Substitute in the Staatskapelle Halle orchestra.</p>
+			
+			<p>🎼 As a versatile artist, I then balanced my life between performing as a soloist, chamber musician, orchestral player and electronic music musician and composer.</p>
+			
+			
+	</div>
+
+</section>
+
+<style>
+	.box {
+		border: 1px solid var(--gray-800);
+		border-radius: 0.75rem;
+		padding: 1.5rem;
+		background-color: var(--gray-999_40);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.skills {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.skills h2 {
+		font-size: var(--text-lg);
+	}
+
+	.skills p {
+		color: var(--gray-400);
+	}
+
+	@media (min-width: 50em) {
+		.box {
+			border-radius: 1.5rem;
+			padding: 2.5rem;
+		}
+
+		.skills {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 5rem;
+		}
+
+		.skills h2 {
+			font-size: var(--text-2xl);
+		}
+	}
+</style>
