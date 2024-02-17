@@ -26,7 +26,6 @@ const projects = (await getCollection('work'))
 ---
 
 <BaseLayout>
-	<div class="stack gap-20 lg:gap-48">
 		<div class="wrapper stack gap-8 lg:gap-20">
 			<header class="hero">
 				<Hero
@@ -36,7 +35,7 @@ const projects = (await getCollection('work'))
 				>
 					<div class="roles">
 						<Pill>  Front-End Developer</Pill>
-						<Pill>  Music </Pill>
+						<Pill>  Musician </Pill>
 					
 					</div>
 				</Hero>
@@ -45,7 +44,7 @@ const projects = (await getCollection('work'))
 					alt="Photo d'anne-Flore Bernard"
 					width="480"
 					height="620"
-					border-radius: 16rem;
+					border-radius: 2rem;
 					src="/assets/portrait.jpg"
 				/>
 			</header>
@@ -55,7 +54,7 @@ const projects = (await getCollection('work'))
 
 		<main class="wrapper stack gap-20 lg:gap-48">
 			<section class="section with-background with-cta">
-				<header class="section-header stack gap-2 lg:gap-4">
+				<header class="section-header  stack gap-2 lg:gap-4">
 					<h3>Selected Work</h3>
 					<p>Take a look below at some of my featured work :)</p>
 				</header>
@@ -120,7 +119,7 @@ const projects = (await getCollection('work'))
 		aspect-ratio: 5 / 4;
 		object-fit: cover;
 		/* object-position: top; */
-		border-radius: 50%;
+		border-radius: 2rem;
 		box-shadow: var(--shadow-md);
 	}
 
@@ -150,10 +149,12 @@ const projects = (await getCollection('work'))
 	.section {
 		display: grid;
 		gap: 2rem;
+		
 	}
 
 	.with-background {
 		position: relative;
+		
 	}
 
 	.with-background::before {
@@ -178,6 +179,7 @@ const projects = (await getCollection('work'))
 
 	.with-background.bg-variant::before {
 		--hero-bg: var(--bg-image-subtle-1);
+		
 	}
 
 	.section-header {
