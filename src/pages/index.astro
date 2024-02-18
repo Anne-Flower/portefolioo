@@ -25,6 +25,19 @@ import { string } from "astro/zod";
 const today = new Date();
 
 const projects = [
+{
+    id: "todo",
+    slug: "https://github.com/Anne-Flower/to-do-list/tree/master",
+    body: "To do list realized in React and Tailwind",
+    collection: "work",
+    data: {
+      title: "To Do List Projet",
+      description: "Project realized in React and Tailwind",
+      publishDate: today,
+      tags: ["react", "tailwind"],
+      img: "/assets/ToDoList.png",
+    },
+  },
   {
     id: "flags",
     slug: "https://github.com/Anne-Flower/ReactFlagApp",

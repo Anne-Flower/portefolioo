@@ -8,9 +8,49 @@ import PortfolioPreview from '../components/PortfolioPreview.astro';
 import Hero from '../components/Hero.astro';
 import Grid from '../components/Grid.astro';
 
-const projects = (await getCollection('work')).sort(
-	(a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
-);
+const today = new Date();
+
+const projects = [
+{
+    id: "todo",
+    slug: "https://github.com/Anne-Flower/to-do-list/tree/master",
+    body: "To do list realized in React and Tailwind",
+    collection: "work",
+    data: {
+      title: "To Do List Projet",
+      description: "Project realized in React and Tailwind",
+      publishDate: today,
+      tags: ["react", "tailwind"],
+      img: "/assets/ToDoList.png",
+    },
+  },
+  {
+    id: "flags",
+    slug: "https://github.com/Anne-Flower/ReactFlagApp",
+    body: "",
+    collection: "work",
+    data: {
+      title: "React Flags Projet",
+      description: "Projet réalisé en React et css",
+      publishDate: today,
+      tags: ["react", "css"],
+      img: "/assets/FlagReactImage.png",
+    },
+  },
+	{
+    id: "balade",
+    slug: "https://github.com/Anne-Flower/baladeTonChien",
+    body: "",
+    collection: "work",
+    data: {
+      title: "Balade ton chien Project",
+      description: "Projet réalisé en RubyonRails, JS et css",
+      publishDate: today,
+      tags: ["ruby", "css", "JS"],
+      img: "/assets/BaladeTonChien.png",
+    },
+  },
+];
 ---
 
 <BaseLayout
