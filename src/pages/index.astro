@@ -26,6 +26,19 @@ const today = new Date();
 
 const projects = [
 {
+    id: "movie-project",
+    slug: "",
+    body: "",
+    collection: "work",
+    data: {
+      title: "Movie Project",
+      description: "Projet réalisé en React, Tailwind, ChartJS, API tmdb, Vite, Framer Motion",
+      publishDate: today,
+      tags: ["React", "Tailwind", "Framer Motion", "Vite", "ChartJS"],
+      img: "/assets/MovieProject.png",
+    },
+  },
+{
     id: "",
     slug: "",
     body: "",
@@ -103,15 +116,16 @@ const projects = [
         border-radius:
         2rem;
         src="/assets/portrait.jpg"
+        
       />
     </header>
 
     <Skills />
   </div>
 
-  <main class="wrapper stack gap-20 lg:gap-48">
+  <main class="wrapper stack gap-20 lg:gap-48 ">
     <section class="section with-background with-cta">
-      <header class="section-header stack gap-2 lg:gap-4">
+      <header class="section-header stack gap-2 lg:gap-4 ">
         <h3>Selected Work</h3>
         <p>Take a look below at some of my featured work :)</p>
       </header>
