@@ -12,7 +12,6 @@ import Icon from "../components/Icon.astro";
 import Pill from "../components/Pill.astro";
 import PortfolioPreview from "../components/PortfolioPreview.astro";
 
-
 import ContactCTA from "../components/ContactCTA.astro";
 import Skills from "../components/Skills.astro";
 import { string } from "astro/zod";
@@ -25,20 +24,21 @@ import { string } from "astro/zod";
 const today = new Date();
 
 const projects = [
-{
+  {
     id: "movie-project",
     slug: "https://github.com/abernardArtefact/movieProject.git",
     body: "",
     collection: "work",
     data: {
       title: "Movie Project",
-      description: "Projet réalisé en React, Tailwind, ChartJS, API tmdb, Vite, Framer Motion",
+      description:
+        "Projet réalisé en React, Tailwind, ChartJS, API tmdb, Vite, Framer Motion",
       publishDate: today,
       tags: ["React", "Tailwind", "Framer Motion", "Vite", "ChartJS"],
       img: "/assets/MovieProject.png",
     },
   },
-{
+  {
     id: "",
     slug: "",
     body: "",
@@ -51,7 +51,7 @@ const projects = [
       img: "/assets/portefolioC.Guillermin.png",
     },
   },
-{
+  {
     id: "todo",
     slug: "https://github.com/Anne-Flower/to-do-list/tree/master",
     body: "To do list realized in React and Tailwind",
@@ -77,7 +77,7 @@ const projects = [
       img: "/assets/FlagReactImage.png",
     },
   },
-	{
+  {
     id: "balade",
     slug: "https://github.com/Anne-Flower/baladeTonChien",
     body: "",
@@ -91,8 +91,6 @@ const projects = [
     },
   },
 ];
-
-
 ---
 
 <BaseLayout>
@@ -116,16 +114,15 @@ const projects = [
         border-radius:
         2rem;
         src="/assets/portrait.jpg"
-        
       />
     </header>
 
     <Skills />
   </div>
 
-  <main class="wrapper stack gap-20 lg:gap-48 ">
+  <main class="wrapper stack gap-20 lg:gap-48">
     <section class="section with-background with-cta">
-      <header class="section-header stack gap-2 lg:gap-4 ">
+      <header class="section-header stack gap-2 lg:gap-4">
         <h3>Selected Work</h3>
         <p>Take a look below at some of my featured work :)</p>
       </header>
